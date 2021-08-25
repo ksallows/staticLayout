@@ -1,0 +1,39 @@
+body {
+    margin:0;
+    padding:0;
+}
+.wrapper {
+    display: grid;
+}
+#colors {
+    height:10px;
+    background: linear-gradient(
+    90deg,
+    #b15533 27%,
+    #006341 0,
+    #006341 39%,
+    #3eb1c8 0,
+    #3eb1c8 51%,
+    #d592aa 0,
+    #d592aa 63%,
+    #eca154 0,
+    #eca154 75%,
+    #99d6ea 0);
+    width:100%;
+}
+header {
+    height:25vh;
+    border-bottom:1px solid #aaa;
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+}
+#logo {
+    fill:#006341;
+    width:50%;
+}
+header div, header nav {
+    flex-grow:1;
+    background:lavender;
+    padding:2rem;
+}
