@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="js.js"></script>
 </head>
 
 <body>
@@ -72,25 +73,58 @@
                 </svg>
             </div>
             <nav id="account">
-                <a href="_blank"><img src="assets/signIn.png" /><br />sign in</a>
-                <a href="_blank"><img src="assets/wishList.png" /><br />wish list</a>
-                <a href="_blank"><img src="assets/giftFinder.png" /><br />gift finder</a>
-                <a href="_blank"><img id="fixIcon" src="assets/cart.png" /><br />cart</a>
+                <a href="/" target="_blank"><img src="assets/signIn.png" /><br />sign in</a>
+                <a href="/" target="_blank"><img src="assets/wishList.png" /><br />wish list</a>
+                <a href="/" target="_blank"><img src="assets/giftFinder.png" /><br />gift finder</a>
+                <a href="/" target="_blank"><img id="fixIcon" src="assets/cart.png" /><br />cart</a>
             </nav>
         </div>
         <input id="searchBar" placeholder="search keyword or item number" />
         <nav id="categories">
-            <a href="_blank">new</a>
-            <a href="_blank">gifts</a>
-            <a href="_blank">fun</a>
-            <a href="_blank">home</a>
-            <a href="_blank">kitchen &amp; bar</a>
-            <a href="_blank">jewelry</a>
-            <a href="_blank">women</a>
-            <a href="_blank">men</a>
-            <a href="_blank">kids</a>
-            <a href="_blank">featured</a>
-            <a href="_blank">sale</a>
+            <a href="/" target="_blank">new</a>
+            <a href="#" class="hiddenMenuLink" id="gifts">gifts</a>
+            <div class="hiddenMenu" id="giftsMenu">
+                <ul>
+                    <li><a href="/" target="_blank" class="mainLink bb">see all gifts</a></li>
+                    <li><a href="/" target="_blank" class="mainLink">by recipient</a></li>
+                    <li><a href="/" target="_blank" class="">women</a></li>
+                    <li><a href="/" target="_blank" class="">men</a></li>
+                    <li><a href="/" target="_blank" class="">couples</a></li>
+                    <li><a href="/" target="_blank" class="">family</a></li>
+                    <li><a href="/" target="_blank" class="">teens</a></li>
+                    <li><a href="/" target="_blank" class="bb">kids</a></li>
+                    <li><a href="/" target="_blank" class="mainLink">by price</a></li>
+                    <li><a href="/" target="_blank" class="">under $25</a></li>
+                    <li><a href="/" target="_blank" class="">under $50</a></li>
+                    <li><a href="/" target="_blank" class="">under $75</a></li>
+                    <li><a href="/" target="_blank" class="BB">under $100</a></li>
+                    <li><a href="/" target="_blank" class="mainLink">by interest</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/" target="_blank" class="mainLink">wedding gifts</a></li>
+                    <li><a href="/" target="_blank" class="">for the couple</a></li>
+                    <li><a href="/" target="_blank" class="">bridesmaid gifts</a></li>
+                    <li><a href="/" target="_blank" class="">groomsmen gifts</a></li>
+                    <li><a href="/" target="_blank" class="bb">personalized wedding</a></li>
+                    <li><a href="/" target="_blank" class="">teens</a></li>
+                    <li><a href="/" target="_blank" class="bb">kids</a></li>
+                    <li><a class="mainLink">by price</a></li>
+                    <li><a href="/" target="_blank" class="">under $25</a></li>
+                    <li><a href="/" target="_blank" class="">under $50</a></li>
+                    <li><a href="/" target="_blank" class="">under $75</a></li>
+                    <li><a href="/" target="_blank" class="BB">under $100</a></li>
+                    <li><a class="mainLink">by interest</a></li>
+                </ul>
+            </div>
+            <a href="/" target="_blank">fun</a>
+            <a href="/" target="_blank">home</a>
+            <a href="/" target="_blank">kitchen &amp; bar</a>
+            <a href="/" target="_blank">jewelry</a>
+            <a href="/" target="_blank">women</a>
+            <a href="/" target="_blank">men</a>
+            <a href="/" target="_blank">kids</a>
+            <a href="/" target="_blank">featured</a>
+            <a href="/" target="_blank">sale</a>
         </nav>
     </header>
 
