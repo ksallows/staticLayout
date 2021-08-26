@@ -1,12 +1,10 @@
 body {
-    margin:0;
-    padding:0;
-}
-.wrapper {
-    display: grid;
+    margin: 0;
+    padding: 0;
+    font-family:'Nunito Sans',sans-serif;
 }
 #colors {
-    height:10px;
+    height: 10px;
     background: linear-gradient(
     90deg,
     #b15533 27%,
@@ -19,21 +17,107 @@ body {
     #eca154 0,
     #eca154 75%,
     #99d6ea 0);
-    width:100%;
+    width: 100%;
 }
 header {
-    height:25vh;
-    border-bottom:1px solid #aaa;
-    display:flex;
-    justify-content: center;
-    align-items: baseline;
+    height: 25vh;
+    border-bottom: 1px solid #aaa;
+}
+#flexContainer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.logo {
+    flex-grow: 4;
+    margin: auto;
 }
 #logo {
-    fill:#006341;
-    width:50%;
+    fill: #006341;
+    max-width: 35%;
+    min-width: 20%;
+    display:block;
+    margin:0 auto;
+}
+#tagline,#account {
+    flex-grow: 3;
+}
+#tagline {
+    font-weight:700;
+    padding:30px 0 0 100px;
+}
+#account {
 }
 header div, header nav {
-    flex-grow:1;
-    background:lavender;
-    padding:2rem;
+    flex-grow: 1;
+}
+header nav {
+    padding:0 30px 0 0;
+}
+#account > a  {
+    display:inline-block;
+    padding:5px 8px 5px 5px;
+    color:#000;
+    font-size:14px;
+}
+#fixIcon {position:relative;right:15px;}
+#searchBar {
+    width: 40%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 30px;
+    border: 1px solid #aaa;
+    padding: 13px;
+    font-family: "Nunito Sans";
+    color: #aaa;
+    font-size: 13pt;
+}
+#categories {
+    margin:0 auto 0;
+    text-align: center;
+    padding-top:10px;
+}
+#categories > a {
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    color:#000;
+    padding:0 25px;
+}
+.wrapper {
+    display: grid;
+    background:#fbf7f4;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-columns: 1fr 8fr 8fr 1fr;
+    align-items: center
+}
+.sideWhite {
+    background:#fff !important;
+}
+.main {
+    text-align: center;
+}
+h1 {
+    font-family: Merriweather, Georgia, serif;
+    font-size:18pt;
+}
+h4 {
+    font-weight: 500;
+}
+.button {
+    display: inline-block;
+    background: #fff;
+    border: 3px solid #000;
+    text-transform: uppercase;
+    text-decoration:none;
+    padding:10px;
+    color:#000;
+    transition: border-color 0.15s,background 0.15s;
+}
+.button:hover {
+    border-color:#3eb1c8;
+    background:#3eb1c8;
 }
