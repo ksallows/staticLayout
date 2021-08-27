@@ -46,8 +46,6 @@ header {
     font-weight:700;
     padding:30px 0 0 100px;
 }
-#account {
-}
 header div, header nav {
     flex-grow:1;
 }
@@ -71,6 +69,11 @@ header nav {
     font-family:"Nunito Sans";
     color: #aaa;
     font-size:13pt;
+    transition:border-radius 0.2s;
+    background:url("assets/search.png") top right no-repeat;
+}
+#searchBar:focus {
+    border-radius:0;
 }
 #categories {
     margin:0 auto 0;
@@ -117,6 +120,7 @@ h4 {
     padding:10px;
     color:#000;
     transition:border-color 0.15s,background 0.15s;
+    cursor:pointer;
 }
 .button:hover {
     border-color:#3eb1c8;
@@ -136,19 +140,23 @@ h4 {
     text-align:left !important;
 }
 .hiddenMenu * {pointer-events:none;}
-#giftsMenu {
-
-}
 .hiddenMenu ul {
     list-style-type:none;
     padding:0;
     display:inline-block;
     padding:15px;
     box-sizing:border-box;
-    width:17%;
     margin:0;
     vertical-align:top;
 }
+.menuClass1 {width:17%}
+.menuClass2 {}
+.menuClass3 {}
+.width1 {width:43%;}
+.width2 {width:33%;}
+.width2 img,.width3 img {width:317px;height:317px;}
+.width3 {width:32%;}
+.width4 {width:40%;}
 .hiddenMenu a {
     display:block;
     text-decoration:none;
@@ -162,7 +170,6 @@ h4 {
 }
 .bb {border-bottom:1px solid #e6e6e6;}
 .menuExtra {
-    width:43%;
     box-sizing:border-box;
     display:inline-block;
     text-align:center;
@@ -181,3 +188,60 @@ h4 {
     margin:2px 0;
     text-transform: uppercase;
 }
+.newForYou {
+    max-width:80%;
+    border-top:1px solid #aaaaaa;
+    margin:40px auto;
+    text-align:center;
+}
+.newForYou h1 {
+    font-family:"Nunito Sans",sans-serif;
+    font-size:24px;
+    margin:20px auto;
+    text-align:center;
+}
+.blockLink {
+    display:inline-block;
+    color:black;
+    text-decoration:none;
+}
+.blockLink img {
+    height:217px;
+    width:217px;
+}
+.blockLink:first-of-type {
+    margin-right:15px;
+}
+.ribbon {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:1fr;
+    grid-column-gap:100px;
+    background:#fcf1e9;
+    box-sizing:border-box;
+    padding:30px 15%;
+}
+.ribbon h3 {
+    font-family:"Nunito Sans",sans-serif;
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:300;
+}
+.ribbon p {
+    color:rgb(102, 102, 102);
+    font-family:"Nunito Sans",sans-serif;
+    font-size:14px;
+}
+.ribbon a {
+    color:#000;
+}
+.theBIGpicturesdiv {
+    min-width:80%;
+    margin:30px auto;
+    text-align:center;
+}
+.theBIGpicturesdiv div{
+    display:inline-block;
+    width:40%;
+}
+.theBIGpicturesdiv a, a h1 {text-decoration:none;color:#000;}
